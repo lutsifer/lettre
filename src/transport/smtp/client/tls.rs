@@ -153,7 +153,7 @@ impl TlsParametersBuilder {
             cert_store: CertificateStore::Default,
             root_certs: Vec::new(),
             accept_invalid_hostnames: false,
-            accept_invalid_certs: false,
+            accept_invalid_certs: true,
             #[cfg(any(feature = "native-tls", feature = "rustls-tls", feature = "boring-tls"))]
             min_tls_version: TlsVersion::Tlsv12,
         }
